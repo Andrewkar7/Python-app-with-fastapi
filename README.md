@@ -29,15 +29,17 @@
 
 - Реализована функция is_alive_host в приложении my_app.py.
 - Написаны тесты для проверки релевантных адресов и несуществующих в my_tests.py
-- Развернут вокруг функции веб сервис с помощью fastapi
-  Запускаем сервер с помощью >> uvicorn my_api:app --host 0.0.0.0 --port 8000
-  Вводим в командной строке >> curl your_service.loc:8000/healthz?hostname=
+- Развернут вокруг функции веб сервис с помощью fastapi<br/>
+  Запускаем сервер с помощью <br/>
+  ``` >> uvicorn my_api:app --host 0.0.0.0 --port 8000 ```<br/>
+  Вводим в командной строке <br/> 
+  ``` >> curl your_service.loc:8000/healthz?hostname= ```<br/>
   где после "=" вставляем интересующий нас хостинг
-- Завернуто приложение в докер, ссылка на репозиторий 
- ``` >> https://hub.docker.com/repository/docker/andrewkar7/python-fastapi-app ```
-  Загружаем контейнер 
-  ``` >> sudo docker pull andrewkar7/python-fastapi-app:0.1 ```
-  Запускаем 
+- Завернуто приложение в докер, ссылка на репозиторий <br/>
+ ``` >> https://hub.docker.com/repository/docker/andrewkar7/python-fastapi-app ```<br/>
+  Загружаем контейнер <br/>
+  ``` >> sudo docker pull andrewkar7/python-fastapi-app:0.1 ```<br/>
+  Запускаем <br/>
   ``` >> sudo docker run -p 8000:8000 -d andrewkar7/python-fastapi-app:0.1 ```
   
 P.S. Работа проделана на OC Linux. 
