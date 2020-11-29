@@ -27,15 +27,17 @@
 
 ## Что сделано
 
-1 Реализована функция is_alive_host в приложении my_app.py.
-2 Написаны тесты для проверки релевантных адресов и несуществующих в my_tests.py
-3 Развернут вокруг функции веб сервис с помощью fastapi
+- Реализована функция is_alive_host в приложении my_app.py.
+- Написаны тесты для проверки релевантных адресов и несуществующих в my_tests.py
+- Развернут вокруг функции веб сервис с помощью fastapi
   Запускаем сервер с помощью >> uvicorn my_api:app --host 0.0.0.0 --port 8000
   Вводим в командной строке >> curl your_service.loc:8000/healthz?hostname=
   где после "=" вставляем интересующий нас хостинг
-4 Завернуто приложение в докер
-  ссылка на репозиторий >> https://hub.docker.com/repository/docker/andrewkar7/python-fastapi-app
-  Загружаем контейнер >> sudo docker pull andrewkar7/python-fastapi-app:0.1
-  Запускаем >> sudo docker run -p 8000:8000 -d andrewkar7/python-fastapi-app:0.1
+- Завернуто приложение в докер, ссылка на репозиторий 
+ ``` >> https://hub.docker.com/repository/docker/andrewkar7/python-fastapi-app ```
+  Загружаем контейнер 
+  ``` >> sudo docker pull andrewkar7/python-fastapi-app:0.1 ```
+  Запускаем 
+  ``` >> sudo docker run -p 8000:8000 -d andrewkar7/python-fastapi-app:0.1 ```
   
 P.S. Работа проделана на OC Linux. 
